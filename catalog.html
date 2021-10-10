@@ -20,7 +20,7 @@
             <label class="visually-hidden" for="serch-field">Поиск</label>
             <input class="field" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
           </p>
-          <button class="button serch-button" type="submit">
+          <button class="serch-button" type="submit">
             <span class="visually-hidden">Поиск</span>
           </button>
         </form>
@@ -162,38 +162,50 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать</button>
       </form>
-      <a href="#" class="button button-light">
+      <a href="#" class="sorting-button sorting-button-to-top">
         <span class="visually-hidden">Сортировка по возрастанию</span>
       </a>
-      <a class="button" href="#">
+      <a class="sorting-button sorting-button-to-bottom" href="#">
         <span class="visually-hidden">Сортировка по убыванию</span>
       </a>
 
       <ul class="product-list">
         <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+          <p class="product-card-image">
+            <img src="" alt="">
+            <a class="button button-more" href="#">Подробнее</a>
+          </p>
+          <a class="product-card-link" href="#">
             <h3 class="product-card-title">Любительская селфи-палка</h3>
           </a>
           <b class="product-card-price">500 ₽</b>
         </li>
         <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+          <p class="product-card-image">
+            <img src="" alt="">
+            <a class="visually-hidden button button-more" href="#">Подробнее</a>
+          </p>
+          <a class="product-card-link" href="#">
             <h3 class="product-card-title">Профессиональная селфи-палка</h3>
           </a>
           <b class="product-card-price">1 500 ₽</b>
         </li>
         <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+          <p class="product-card-image">
+            <img src="" alt="">
+            <a class="visually-hidden button button-more" href="#">Подробнее</a>
+          </p>
+          <a class="product-card-link" href="#">
             <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
           </a>
           <b class="product-card-price">2 500 ₽</b>
         </li>
         <li class="product-card">
-          <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+          <p class="product-card-image">
+            <img src="" alt="">
+            <a class="visually-hidden button button-more" href="#">Подробнее</a>
+          </p>
+          <a class="product-card-link" href="#">
             <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
           </a>
           <b class="product-card-price">4 900 ₽</b>
@@ -201,15 +213,15 @@
       </ul>
 
       <p class="show-more">
-        <button class="button show-more" type="button">Загрузить еще</button>
+        <a class="show-more-link" href="#">Загрузить еще</a>
       </p>
 
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev" href="#">Назад</a>
+          <a class="pagination-link pagination-prev">Назад</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">1</a>
+          <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -241,9 +253,15 @@
     </div>
 
     <ul class="footer-navigation-list">
-      <a class="button button-info" href="#">Доставка</a>
-      <a class="button button-info" href="#">Гарантия</a>
-      <a class="button button-info" href="#">Контакты</a>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Контакты</a>
+      </li>
     </ul>
 
     <ul class="footer-social-list">
@@ -273,7 +291,5 @@
 
   </footer>
 </body>
-
-
 
 </html>
