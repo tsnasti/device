@@ -20,7 +20,7 @@
             <label class="visually-hidden" for="serch-field">Поиск</label>
             <input class="field" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
           </p>
-          <button class="button serch-button" type="submit">
+          <button class="serch-button" type="submit">
             <span class="visually-hidden">Поиск</span>
           </button>
         </form>
@@ -62,9 +62,8 @@
         <li class="slider-item">
           <img class="slider-image" src="" alt="Фото квадрокоптера">
           <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-          <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен мощнымлазером,
-            замаскированным под стандартную камеру.</p>
-          <a class="slider-link" href="#">Подробнее</a>
+          <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен мощнымлазером, замаскированным под стандартную камеру.</p>
+          <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
             <dt class="slider-description-term">800 м</dt>
             <dd class="slider-description-definition">Дальность полета</dd>
@@ -75,9 +74,8 @@
         <li class="slider-item">
           <img class="slider-image" src="" alt="Фото фитнес-браслета">
           <h2 class="slider-title">Худеем правильно!</h2>
-          <p class="slider-information">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-            занятия и соблюдать диету.</p>
-          <a class="slider-link" href="#">Подробнее</a>
+          <p class="slider-information">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
             <dt class="slider-description-term">48 часов</dt>
             <dd class="slider-description-definition">Без подзарядки</dd>
@@ -86,10 +84,8 @@
         <li class="slider-item">
           <img class="slider-image" src="" alt="Фото селфи-палки">
           <h2 class="slider-title">Делай селфи, как Бен Стиллер! </h2>
-          <p class="slider-information">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-            метров
-            длиной и весом всего 5 кг.</p>
-          <a class="slider-link" href="#">Подробнее</a>
+          <p class="slider-information">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
             <dt class="slider-description-term">8,5 м</dt>
             <dd class="slider-description-definition">Длина палки</dd>
@@ -137,6 +133,7 @@
         <li class="catalog-item">
           <a class="catalog-link" href="#">Квадрокоптеры</a>
         </li>
+      </ul>
     </section>
 
     <section class="services">
@@ -145,20 +142,18 @@
       <ol class="services-list">
         <li class="services-item">
           <h2 class="services-title">Доставка</h2>
-          <p class="services-description"></p> Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно! Ведь
-          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="services-description"></p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
       </ol>
       <ol class="slider-service-list">
         <li class="slider-servise-item">
-          <button class="slider-button slider-button-current" type="button">Доставка</button>
+          <button class="button slider-button-current" type="button">Доставка</button>
         </li>
         <li class="slider-servise-item">
-          <button class="slider-button slider-button-current" type="button">Гарантия</button>
+          <button class="button slider-button" type="button">Гарантия</button>
         </li>
         <li class="slider-servise-item">
-          <button class="slider-button slider-button-current" type="button">Кредит</button>
+          <button class="button slider-button" type="button">Кредит</button>
         </li>
       </ol>
     </section>
@@ -168,52 +163,20 @@
       <button class="info" type="button">
         <span class="visually-hidden">Посмотреть дополнительную информацию</span>
       </button>
-      <!--  Модального окна еще не было в задании
-      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="appointment-form-name">
-          <label for="appointment-name">Ваше имя</label>
-          <input type="text" id="appointment-name" name="appointment-name" placeholder="Имя Фамилия"><br>
-          <label for="appointment-name">Пожалуйста, представьтесь</label>
-        </p>
-        <p class="appointment-form-mail">
-          <label for="appointment-mail">Ваш e-mail:</label>
-          <input type="text" id="appointment-mail" name="appointment-mail" placeholder="e-mail:"><br>
-          <label for="appointment-mail">Забавный у вас адрес</label>
-        </p>
-        <p class="appointment-form-comment">
-          <label for="appointment-comment">Что нужно привезти:</label>
-          <input type="text" id="appointment-comment" name="appointment-comment" placeholder="В свободной форме"><br>
-          <label for="appointment-name">Пожалуйста, представьтесь</label>
-        </p>
-        <p class="appointment-form-number">
-          <label for="appointment-number">Количество</label>
-          <button class="info" type="button">
-            <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-          </button><br>
-          <button class="bt_minus">-</button>
-          <input type="text" class="quantity" value="1" data-max-count="50">
-          <button class="bt_plus">+</button>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      -->
     </section>
 
     <section class="information-section">
       <h2 class="visually-hidden">Информация о компании</h2>
       <h3 class="iformation-title">О нас</h3>
-      <p class="iformation-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом
-        из нас.</p>
-      <p class="iformation-description">Мы можем доставить ваш товар в самые отдалённые уголки России
-        транспортными
-        компаниями:</p>
+      <p class="iformation-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+      <p class="iformation-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
       <ul class="transport-company-list">
         <li class="transport-company-item">Меловые линии</li>
         <li class="transport-company-item">СДИК</li>
         <li class="transport-company-item">ТоксБерри</li>
       </ul>
-      <p>
-        <a class="button button-more" href="#">Подробнее о нас</a>
+      <p class="more information">
+        <a class="button button-more-us" href="#">Подробнее о нас</a>
       </p>
     </section>
 
@@ -231,23 +194,22 @@
         <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a class="button button-feedback" href="#">Напишите нам</a>
-      </ul>
+      <p>
+        <a class="button button-feedback" href="#">Напишите нам</a>
+      </p>
     </section>
 
     <section class="distribution">
       <h2 class="distribution-title">Подпишитесь на рассылку</h2>
-      <p class="distribution-description">Еженедельный дайджест с обзорами новинок,длительными тест-драйвами,
-        распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="distribution-email">
           <label class="visually-hidden" for="distribution-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email"
-            required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
         </p>
-        <button class="button distribution-button" type="submit">Подписаться
-        </button>
+        <button class="distribution-button" type="submit">Подписаться</button>
       </form>
+      <p class="distribution-clarification">Это бесплатно</p>
     </section>
   </main>
 
@@ -262,24 +224,30 @@
     </div>
 
     <ul class="footer-navigation-list">
-      <a class="button button-info" href="#">Доставка</a>
-      <a class="button button-info" href="#">Гарантия</a>
-      <a class="button button-info" href="#">Контакты</a>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Гарантия</a>
+      </li>
+      <li class="footer-navigation-item">
+        <a class="footer-navigation-link" href="#">Контакты</a>
+      </li>
     </ul>
 
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="https://www.facebook.com/htmlacademy">
+        <a class="social-icon-link" href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Фейсбук</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://www.instagram.com/htmlacademy/">
+        <a class="social-icon-link" href="https://www.instagram.com/htmlacademy/">
           <span class="visually-hidden">Инстаграм</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="https://twitter.com/htmlacademy_ru">
+        <a class="social-icon-link" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Твиттер</span>
         </a>
       </li>
