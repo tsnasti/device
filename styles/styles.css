@@ -4,32 +4,30 @@ body {
 }
 
 .page-header {
-  width: 1160px;
-  height: 300px;
-  background: #ffe17f;
+  background-color: #ffe17f;
 }
 
 .services {
   color: #444444;
-  background: #F0F0F0;
+  background-color: #F0F0F0;
 }
 
 .distribution {
   color: #444444;
-  background: #F0F0F0;
+  background-color: #F0F0F0;
 }
 
 .page-footer {
   color: #ffffff;
-  background: #444444;
+  background-color: #444444;
 }
 
 .catalog-products-title {
-  background: #DCDCDC;
+  background-color: #DCDCDC;
 }
 
 .catalog-filter {
-  background: #EBEBEB;
+  background-color: #EBEBEB;
 }
 
 
