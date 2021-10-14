@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <p class="page-header-logo">
       <a class="page-header-logo-link" href="index.html">
-        <img class="page-header-logo" alt="Логотип «DEVICE»" src="">
+        <img class="page-header-logo" src="img/header-logo.svg" width="144,9" height="36" alt="Логотип «DEVICE»">
       </a>
     </p>
     <ul class="user-list">
@@ -73,7 +74,7 @@
     </header>
 
     <section class="catalog-products">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <h2 class="catalog-products-title">Фильтр:</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость</legend>
@@ -154,7 +155,7 @@
       </form>
 
       <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="sorting">Сортировка</label>
+        <label class="sorting-label" for="sorting">Сортировка:</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -176,7 +177,7 @@
       <ul class="product-list">
         <li class="product-card">
           <p class="product-card-image">
-            <img src="" alt="">
+            <img src="img/catalog/product-1.jpg" width="360" height="380" alt="">
             <a class="button button-more" href="#">Подробнее</a>
           </p>
           <a class="product-card-link" href="#">
@@ -186,7 +187,7 @@
         </li>
         <li class="product-card">
           <p class="product-card-image">
-            <img src="" alt="">
+            <img src="img/catalog/product-2.jpg" width="360" height="380" alt="">
             <a class="visually-hidden button button-more" href="#">Подробнее</a>
           </p>
           <a class="product-card-link" href="#">
@@ -196,7 +197,7 @@
         </li>
         <li class="product-card">
           <p class="product-card-image">
-            <img src="" alt="">
+            <img src="img/catalog/product-3.jpg" width="360" height="380" alt="">
             <a class="visually-hidden button button-more" href="#">Подробнее</a>
           </p>
           <a class="product-card-link" href="#">
@@ -207,7 +208,7 @@
         <li class="product-card">
           <span class="product-card-new">NEW</span>
           <p class="product-card-image">
-            <img src="" alt="">
+            <img src="img/catalog/product-4.jpg" width="360" height="380" alt="">
             <a class="visually-hidden button button-more" href="#">Подробнее</a>
           </p>
           <a class="product-card-link" href="#">
@@ -251,7 +252,7 @@
     <div class="footer-adress-logo">
       <p class="footer-logo">
         <a class="footer-logo-link" href="#">
-          <img class="footer-logo" src="" alt="Логотип «Девайс»">
+          <img class="footer-logo" src="img/footer-logo.svg" width="144,9" height="36" alt="Логотип «Девайс»">
         </a>
       </p>
       <p class="adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -288,10 +289,14 @@
     </ul>
 
     <div class="footer-phone-htmlacademy-logo">
-      <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="footer-htmlacademy-logo" src="" alt="html academy">
-      </a>
+      <p class="footer-phone">
+        <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p class="htmlacademy-link">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="html academy">
+        </a>
+      </p>
     </div>
 
   </footer>
