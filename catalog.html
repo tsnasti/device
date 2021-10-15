@@ -19,7 +19,8 @@
         <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="user-serch-field">
             <label class="visually-hidden" for="serch-field">Поиск</label>
-            <input class="field" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
+            <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field"
+              required>
           </p>
           <button class="serch-button" type="submit">
             <span class="visually-hidden">Поиск</span>
@@ -27,8 +28,8 @@
         </form>
       </li>
       <li class="user-item">
-        <a class="user-cabinet" href="#">Коля Петухов</a>
-        <a class="user-link" href="#">Выйти</a>
+        <a class="user-link" href="#">Коля Петухов</a>
+        <a class="user-cabinet-off" href="#">Выйти</a>
       </li>
       <li class="user-item">
         <a class="user-link" href="#">Сравнить</a>
@@ -59,7 +60,7 @@
 
   <main class="main-inner">
     <header class="inner-header">
-      <h1 class="inner-header-title">Моноподы для селфи</h1>
+      <h1 class="title inner-header-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -84,10 +85,10 @@
           <button class="range-toggle toggle-max" type="button">
             <span class="visually-hidden">Изменить максимальную цену.</span>
           </button>
-          <label class="catalog-filter-label">от
+          <label class="catalog-filter-label">от 0
             <input class="catalog-filter-input" type="number" name="min-price">
           </label>
-          <label class="catalog-filter-label">до
+          <label class="catalog-filter-label">до 5000
             <input class="catalog-filter-input" type="number" name="max-price">
           </label>
         </fieldset>
@@ -154,25 +155,27 @@
         <button class="button" type="submit">Показать</button>
       </form>
 
-      <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="sorting-label" for="sorting">Сортировка:</label>
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <button class="visually-hidden" type="submit">Отсортировать</button>
-      </form>
-      <p class="sorting-link">
-        <a class="sorting-button sorting-button-to-top" href="#">
-          <span class="visually-hidden">Сортировка по возрастанию</span>
-        </a>
-      </p>
-      <p class="sorting-link">
-        <a class="sorting-button sorting-button-to-bottom" href="#">
-          <span class="visually-hidden">Сортировка по убыванию</span>
-        </a>
-      </p>
+      <div class="sorting-container">
+        <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="sorting-label" for="sorting">Сортировка:</label>
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать</button>
+        </form>
+        <p class="sorting-link">
+          <a class="sorting-button sorting-button-to-top" href="#">
+            <span class="visually-hidden">Сортировка по возрастанию</span>
+          </a>
+        </p>
+        <p class="sorting-link">
+          <a class="sorting-button sorting-button-to-bottom" href="#">
+            <span class="visually-hidden">Сортировка по убыванию</span>
+          </a>
+        </p>
+      </div>
 
       <ul class="product-list">
         <li class="product-card">
@@ -294,7 +297,7 @@
       </p>
       <p class="htmlacademy-link">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="html academy">
+          <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="34"  alt="html academy">
         </a>
       </p>
     </div>

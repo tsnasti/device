@@ -19,7 +19,7 @@
         <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="user-serch-field">
             <label class="visually-hidden" for="serch-field">Поиск</label>
-            <input class="field" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
+            <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
           </p>
           <button class="serch-button" type="submit">
             <span class="visually-hidden">Поиск</span>
@@ -61,8 +61,9 @@
       <h2 class="visually-hidden">Подборка товаров</h2>
       <ol class="slider-list">
         <li class="slider-item">
+          <div class="slider-number">01</div>
           <img class="slider-image" src="img/quadcopter-slider.png" width="560" height="560" alt="Фото квадрокоптера">
-          <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
+          <h2 class="title slider-title">Порхает как бабочка, жалит как пчела!</h2>
           <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
@@ -73,8 +74,9 @@
           </dl>
         </li>
         <li class="slider-item">
+          <div class="slider-number">02</div>
           <img class="slider-image" src="img/fitness-bracelet-slider.png" width="560" height="560" alt="Фото фитнес-браслета">
-          <h2 class="slider-title">Худеем правильно!</h2>
+          <h2 class="title slider-title">Худеем правильно!</h2>
           <p class="slider-information">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
@@ -83,8 +85,9 @@
           </dl>
         </li>
         <li class="slider-item">
+          <div class="slider-number">03</div>
           <img class="slider-image" src="img/selfie-stick-slider.png" width="560" height="560" alt="Фото селфи-палки">
-          <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+          <h2 class="title slider-title">Делай селфи, как Бен Стиллер!</h2>
           <p class="slider-information">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="button button-slider button-more" href="#">Подробнее</a>
           <dl class="slider-description-list">
@@ -116,22 +119,22 @@
     <section class="catalog-products">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog-list">
-        <li class="catalog-item">
+        <li class="catalog-item-vr">
           <a class="catalog-link" href="#">Виртуальная реальность</a>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item-monopod">
           <a class="catalog-link" href="#">Моноподы для селфи</a>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item-action-camera">
           <a class="catalog-link" href="#">Экшн-камеры</a>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item-fitness-bracelets">
           <a class="catalog-link" href="#">Фитнес-браслеты</a>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item-smart-watch">
           <a class="catalog-link" href="#">Умные часы</a>
         </li>
-        <li class="catalog-item">
+        <li class="catalog-item-product-quadcopter">
           <a class="catalog-link" href="#">Квадрокоптеры</a>
         </li>
       </ul>
@@ -142,7 +145,7 @@
       <!-- Пока разметила таблицей, так как в задании нет выпадающих блоков  -->
       <ol class="services-list">
         <li class="services-item">
-          <h2 class="services-title">Доставка</h2>
+          <h2 class="title services-title">Доставка</h2>
           <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
       </ol>
@@ -161,6 +164,7 @@
 
     <section class="appointment">
       <a class="appointment-link" href="#">
+        <div class="delivery-block"></div>
         <h2 class="appointment-title">Доставим редкий товар под заказ</h2>
         <button class="info" type="button">
           <span class="visually-hidden">Посмотреть дополнительную информацию</span>
@@ -169,7 +173,7 @@
     </section>
 
     <section class="information-section">
-      <h2 class="iformation-title">О нас</h2>
+      <h2 class="title iformation-title">О нас</h2>
       <p class="iformation-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p class="iformation-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
       <ul class="transport-company-list">
@@ -183,7 +187,7 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contact-title">Контакты</h2>
+      <h2 class="title contact-title">Контакты</h2>
       <p class="contact-description">Вы можете забрать товар сами, заехав в наш офис.</p>
       <p class="contact-description">Заодно, сможете проверить работоспособность покупки.</p>
       <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -202,12 +206,12 @@
     </section>
 
     <section class="distribution">
-      <h2 class="distribution-title">Подпишитесь на рассылку</h2>
+      <h2 class="title distribution-title">Подпишитесь на рассылку</h2>
       <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="distribution-email">
           <label class="visually-hidden" for="distribution-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
+          <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
         </p>
         <button class="distribution-button" type="submit">Подписаться</button>
       </form>
