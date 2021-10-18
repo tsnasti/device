@@ -45,7 +45,7 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
   color: #000000;
-  background-color: #ffe17f;
+  background-color: #FFE17F;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .page-header {
-  background-color: #ffe17f;
+  background-color: #FFE17F;
 }
 
 .field-serch {
@@ -67,7 +67,7 @@ body {
   line-height: 19px;
   opacity: 0.3;
   color: #000000;
-  background-color: #ffe17f;
+  background-color: #FFE17F;
   border: hidden;
 }
 
@@ -109,7 +109,7 @@ body {
   line-height: 30px;
   font-weight: 800;
   text-align: right;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .slider-description-term {
@@ -136,30 +136,33 @@ body {
   width: 160px;
   height: 160px;
   display: block;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .vr-link::before {
-  background: #ffe17f url(../img/vr.svg) no-repeat center;
+  background-image: url(../img/vr.svg);
 }
 
 .monopod-link::before {
-  background: #ffe17f url(../img/monopod.svg) no-repeat center;
+  background-image: url(../img/monopod.svg);
 }
 
 .action-camera-link::before {
-  background: #ffe17f url(../img/action-camera.svg) no-repeat center;
+  background-image: url(../img/action-camera.svg);
 }
 
 .fitness-bracelets-link::before {
-  background: #ffe17f url(../img/fitness-bracelet.svg) no-repeat center;
+  background-image: url(../img/fitness-bracelet.svg);
 }
 
 .smart-watch-link::before {
-  background: #ffe17f url(../img/smart-watch.svg) no-repeat center;
+  background-image: url(../img/smart-watch.svg);
 }
 
 .quadcopter-link::before {
-  background: #ffe17f url(../img/quadcopter.svg) no-repeat center;
+  background-image: url(../img/quadcopter.svg);
 }
 
 .services {
@@ -238,7 +241,7 @@ body {
 }
 
 .page-footer {
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #444444;
 }
 
@@ -255,7 +258,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -263,7 +266,7 @@ body {
 .social-icon-link {
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   opacity: 0.3;
   border-radius: 50px;
   display: block;
@@ -272,7 +275,7 @@ body {
 .footer-phone {
   font-size: 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .user-cabinet-off {
