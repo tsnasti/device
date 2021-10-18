@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,7 +26,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -131,52 +131,35 @@ body {
   text-decoration: none;
 }
 
-.catalog-item-vr::before {
+.catalog-link::before {
   content: "";
   width: 160px;
   height: 160px;
-  background: #ffe17f url(/img/vr.svg) no-repeat center center;
   display: block;
 }
 
-.catalog-item-monopod::before {
-  content: "";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f url(/img/monopod.svg) no-repeat center center;
-  display: block;
+.vr-link::before {
+  background: #ffe17f url(../img/vr.svg) no-repeat center;
 }
 
-.catalog-item-action-camera::before {
-  content: "";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f url(/img/action-camera.svg) no-repeat center center;
-  display: block;
+.monopod-link::before {
+  background: #ffe17f url(../img/monopod.svg) no-repeat center;
 }
 
-.catalog-item-fitness-bracelets::before {
-  content: "";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f url(/img/fitness-bracelet.svg) no-repeat center center;
-  display: block;
+.action-camera-link::before {
+  background: #ffe17f url(../img/action-camera.svg) no-repeat center;
 }
 
-.catalog-item-smart-watch::before {
-  content: "";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f url(/img/smart-watch.svg) no-repeat center center;
-  display: block;
+.fitness-bracelets-link::before {
+  background: #ffe17f url(../img/fitness-bracelet.svg) no-repeat center;
 }
 
-.catalog-item-product-quadcopter::before {
-  content: "";
-  width: 160px;
-  height: 160px;
-  background: #ffe17f url(/img/quadcopter.svg) no-repeat center center;
-  display: block;
+.smart-watch-link::before {
+  background: #ffe17f url(../img/smart-watch.svg) no-repeat center;
+}
+
+.quadcopter-link::before {
+  background: #ffe17f url(../img/quadcopter.svg) no-repeat center;
 }
 
 .services {
@@ -189,12 +172,6 @@ body {
   background-color: #F0F0F0;
 }
 
-.delivery-block {
-  width: 125px;
-  height: 100px;
-  background-color: #FFE17F;
-}
-
 .appointment-link {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -202,9 +179,15 @@ body {
   font-weight: 800;
   letter-spacing: 0.2em;
   color: #000000;
-  background-color: #F0F0F0;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.delivery-block {
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  display: block;
 }
 
 .information-section {
@@ -222,7 +205,7 @@ body {
 }
 
 .contacts-address-text {
-font-style: normal;
+  font-style: normal;
 }
 
 .contacts-phone {
@@ -230,9 +213,8 @@ font-style: normal;
   color: #444444;
 }
 
-.contacts
-h3,
-h4 {
+.contacts h3,
+.contacts h4 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -263,6 +245,7 @@ h4 {
 .adress {
   font-size: 16px;
   line-height: 19px;
+  text-align: left;
 }
 
 .footer-navigation-link {
@@ -277,12 +260,13 @@ h4 {
   text-transform: uppercase;
 }
 
-.footer-social-item {
+.social-icon-link {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
   opacity: 0.3;
   border-radius: 50px;
+  display: block;
 }
 
 .footer-phone {
@@ -378,7 +362,7 @@ h4 {
 }
 
 .pagination {
-background-color: #EBEBEB;
+  background-color: #EBEBEB;
 }
 
 .pagination-link {
@@ -386,7 +370,7 @@ background-color: #EBEBEB;
   text-decoration: none;
 }
 
-.pagination-prev {
+.pagination-button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -394,16 +378,4 @@ background-color: #EBEBEB;
   color: #000000;
   text-transform: uppercase;
 }
-
-.pagination-next {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-
-
 
