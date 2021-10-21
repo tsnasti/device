@@ -80,8 +80,6 @@ body {
 }
 
 .user-list {
-  display: flex;
-  justify-content: center;
   width: 1075px;
   margin: 0;
   padding: 0;
@@ -105,8 +103,6 @@ body {
 }
 
 .navigation-list {
-  display: flex;
-  justify-content: center;
   width: 1041px;
   margin: 0;
   padding: 0;
@@ -261,7 +257,7 @@ margin-right: 341px;
 .appointment-link {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin-top: 90px;
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -377,11 +373,6 @@ margin-right: 341px;
   text-align: left;
 }
 
-.footer-navigation-list {
-  display: flex;
-  margin-right: 58px;
-}
-
 .footer-navigation-link {
   width: 148px;
   margin-right: 7px;
@@ -396,16 +387,9 @@ margin-right: 341px;
   text-transform: uppercase;
 }
 
-.footer-social-list {
-  display: flex;
-  margin: 0 auto;
-  order: 6;
-}
-
 .social-icon-link {
   width: 40px;
   height: 40px;
-  margin-right: 15px;
   background-color: #FFFFFF;
   opacity: 0.3;
   border-radius: 50px;
@@ -414,6 +398,7 @@ margin-right: 341px;
 
 .footer-phone {
   width: 293px;
+  margin-left: auto;
   text-align: right;
   font-size: 16px;
   text-decoration: none;
