@@ -66,6 +66,12 @@ body {
   color: #000000;
 }
 
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -81,8 +87,6 @@ body {
 
 .user-list {
   width: 1075px;
-  margin: 0;
-  padding: 0;
 }
 
 .field-serch {
@@ -104,8 +108,6 @@ body {
 
 .navigation-list {
   width: 1041px;
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-link {
@@ -139,8 +141,6 @@ body {
 }
 
 .slider-list {
-  margin: 0;
-  padding: 0;
   text-align: left;
 }
 
@@ -149,8 +149,6 @@ body {
 }
 
 .slider-item-container {
-  display: flex;
-  flex-direction: column;
   margin-left: 40px;
 }
 
@@ -164,7 +162,9 @@ body {
 }
 
 .button-slider {
-margin-right: 341px;
+  width: 220px;
+  margin-right: 341px;
+  display: block;
 }
 
 .slider-description-term {
@@ -179,8 +179,6 @@ margin-right: 341px;
 .catalog-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-item {
@@ -233,8 +231,6 @@ margin-right: 341px;
 
 .services {
   display: flex;
-  margin-right: 0;
-  padding: 0;
   width: 1094;
   text-align: left;
   background-color: #F0F0F0;
