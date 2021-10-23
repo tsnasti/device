@@ -416,6 +416,15 @@ body {
   text-decoration: none;
 }
 
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter-container {
+  width: 200px;
+  margin-right: 72px;
+}
+
 .catalog-products-title {
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.2em;
@@ -438,6 +447,10 @@ body {
   font-size: 15px;
   line-height: 18px;
   opacity: 0.3;
+}
+
+.catalog-right-column {
+  width: 760px;
 }
 
 .sorting-container {
