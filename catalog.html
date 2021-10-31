@@ -9,20 +9,20 @@
 
 <body>
   <header class="page-header">
-    <div class="header-container-inner">
+    <div class="header-container header-container-inner">
       <p class="page-header-logo logo">
         <a class="page-header-logo-link" href="index.html">
           <img class="page-header-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «DEVICE»">
         </a>
       </p>
-      <ul class="user-list clear-list">
+      <ul class="user-list clear-list flex-list">
         <li class="user-item">
           <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="user-serch-field">
               <label class="visually-hidden" for="serch-field">Поиск</label>
               <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
             </p>
-            <button class="serch-button" type="submit">
+            <button class="serch-button visually-hidden" type="submit">
               <span class="visually-hidden">Поиск</span>
             </button>
           </form>
@@ -40,7 +40,7 @@
       </ul>
 
       <nav class="navigation">
-        <ul class="navigation-list clear-list">
+        <ul class="navigation-list clear-list flex-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -63,7 +63,7 @@
     <div class="page-container-inner">
       <header class="inner-header">
         <h1 class="title inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs-list clear-list">
+        <ul class="breadcrumbs-list clear-list flex-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -231,38 +231,36 @@
             <a class="show-more-link" href="#">Загрузить еще</a>
           </p>
 
-          <div class="pagination-container">
-            <ul class="pagination clear-list">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-prev pagination-button">Назад</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-next pagination-button" href="#">Вперед</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="pagination clear-list flex-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-button">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next pagination-button" href="#">Вперед</a>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer-container">
+    <div class="page-footer-container flex-list">
       <div class="footer-adress-logo">
         <p class="footer-logo logo">
           <a class="footer-logo-link" href="#">
@@ -273,7 +271,7 @@
       </div>
 
       <div class="navigation-social">
-        <ul class="footer-navigation-list clear-list">
+        <ul class="footer-navigation-list clear-list flex-list">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
           </li>
@@ -285,7 +283,7 @@
           </li>
         </ul>
 
-        <ul class="footer-social-list clear-list">
+        <ul class="footer-social-list clear-list flex-list">
           <li class="footer-social-item">
             <a class="social-icon-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
@@ -306,11 +304,11 @@
 
       <div class="footer-phone-htmlacademy-logo">
         <p class="footer-phone">
-          <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
         </p>
-        <p class="htmlacademy-link logo">
+        <p class="htmlacademy-logo logo">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="html academy">
+            <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="html academy">
           </a>
         </p>
       </div>

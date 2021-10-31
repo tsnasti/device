@@ -15,7 +15,7 @@
           <img class="page-header-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «DEVICE»">
         </a>
       </p>
-      <ul class="user-list clear-list">
+      <ul class="user-list clear-list flex-list">
         <li class="user-item">
           <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="user-serch-field">
@@ -39,7 +39,7 @@
       </ul>
 
       <nav class="navigation">
-        <ul class="navigation-list clear-list">
+        <ul class="navigation-list clear-list flex-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -67,10 +67,9 @@
             <img class="slider-image" src="img/quadcopter-slider.png" width="560" height="560" alt="Фото квадрокоптера">
             <div class="slider-item-container">
               <h2 class="title slider-title">Порхает как бабочка, жалит как пчела!</h2>
-              <!--Пока без графического оформления <div class="slider-number">01</div>-->
               <p class="slider-information">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button button-slider button-more" href="#">Подробнее</a>
-              <dl class="slider-description-list clear-list">
+              <dl class="slider-description-list clear-list flex-list">
                 <div class="slider-description-container">
                   <dt class="slider-description-term">800 м</dt>
                   <dd class="slider-description-definition">Дальность полета</dd>
@@ -86,10 +85,9 @@
             <img class="slider-image" src="img/fitness-bracelet-slider.png" width="560" height="560" alt="Фото фитнес-браслета">
             <div class="slider-item-container">
               <h2 class="title slider-title">Худеем правильно!</h2>
-              <!--Пока без графического оформления <div class="slider-number">02</div>-->
               <p class="slider-information">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="button button-slider button-more" href="#">Подробнее</a>
-              <dl class="slider-description-list">
+              <dl class="slider-description-list clear-list flex-list">
                 <div class="slider-description-container">
                   <dt class="slider-description-term">48 часов</dt>
                   <dd class="slider-description-definition">Без подзарядки</dd>
@@ -101,10 +99,9 @@
             <img class="slider-image" src="img/selfie-stick-slider.png" width="560" height="560" alt="Фото селфи-палки">
             <div class="slider-item-container">
               <h2 class="title slider-title">Делай селфи, как Бен Стиллер!</h2>
-              <!--Пока без графического оформления <div class="slider-number">03</div>-->
               <p class="slider-information">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="button button-slider button-more" href="#">Подробнее</a>
-              <dl class="slider-description-list">
+              <dl class="slider-description-list clear-list flex-list">
                 <div class="slider-description-container">
                   <dt class="slider-description-term">8,5 м</dt>
                   <dd class="slider-description-definition">Длина палки</dd>
@@ -140,7 +137,7 @@
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="catalog-list clear-list">
+        <ul class="catalog-list clear-list flex-list">
           <li class="catalog-item">
             <a class="catalog-link vr-link" href="#">Виртуальная реальность</a>
           </li>
@@ -161,31 +158,37 @@
           </li>
         </ul>
       </section>
+    </div>
 
-      <section class="services">
-        <h2 class="visually-hidden">Предлагаемые сервисы</h2>
-        <!-- Пока разметила таблицей, так как в задании нет выпадающих блоков  -->
-        <ol class="services-list clear-list">
-          <li class="services-item">
-            <h2 class="title services-title">Доставка</h2>
-            <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-        </ol>
-        <ol class="slider-service-list clear-list">
-          <li class="slider-servise-item">
-            <button class="button service-button-current" type="button">Доставка</button>
-          </li>
-          <li class="slider-servise-item">
-            <button class="button service-button" type="button">Гарантия</button>
-          </li>
-          <li class="slider-servise-item">
-            <button class="button service-button" type="button">Кредит</button>
-          </li>
-        </ol>
-      </section>
+    <section class="services">
+      <div class="page-container">
+        <div class="services-container flex-list">
+          <h2 class="visually-hidden">Предлагаемые сервисы</h2>
+          <!-- Пока разметила таблицей, так как в задании нет выпадающих блоков  -->
+          <ol class="services-list clear-list">
+            <li class="services-item">
+              <h2 class="title services-title">Доставка</h2>
+              <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+          </ol>
+          <ol class="slider-service-list clear-list">
+            <li class="slider-servise-item">
+              <button class="button service-button-current" type="button">Доставка</button>
+            </li>
+            <li class="slider-servise-item">
+              <button class="button service-button" type="button">Гарантия</button>
+            </li>
+            <li class="slider-servise-item">
+              <button class="button service-button" type="button">Кредит</button>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
+    <div class="page-container">
       <section class="appointment">
-        <a class="appointment-link" href="#">
+        <a class="appointment-link flex-list" href="#">
           <div class="delivery-block"></div>
           <h2 class="appointment-title">Доставим редкий товар под заказ</h2>
           <button class="info" type="button">
@@ -227,25 +230,28 @@
           </p>
         </section>
       </div>
-
-      <section class="distribution">
-        <h2 class="title distribution-title">Подпишитесь на рассылку</h2>
-        <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="distribution-email">
-            <label class="visually-hidden" for="distribution-email">Email</label>
-            <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email"
-              id="distribution-email" required>
-          </p>
-          <button class="distribution-button" type="submit">Подписаться</button>
-        </form>
-        <p class="distribution-clarification">Это бесплатно</p>
-      </section>
     </div>
+
+    <section class="distribution">
+      <div class="page-container">
+        <div class="distribution-container flex-list">
+          <h2 class="title distribution-title">Подпишитесь на рассылку</h2>
+          <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="distribution-email">
+              <label class="visually-hidden" for="distribution-email">Email</label>
+              <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
+            </p>
+            <button class="distribution-button" type="submit">Подписаться</button>
+          </form>
+          <p class="distribution-clarification">Это бесплатно</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer-container">
+    <div class="page-footer-container flex-list">
       <div class="footer-adress-logo">
         <p class="footer-logo logo">
           <a class="footer-logo-link" href="#">
@@ -256,7 +262,7 @@
       </div>
 
       <div class="navigation-social">
-        <ul class="footer-navigation-list clear-list">
+        <ul class="footer-navigation-list clear-list flex-list">
           <li class="footer-navigation-item">
             <a class="footer-navigation-link" href="#">Доставка</a>
           </li>
@@ -268,7 +274,7 @@
           </li>
         </ul>
 
-        <ul class="footer-social-list clear-list">
+        <ul class="footer-social-list clear-list flex-list">
           <li class="footer-social-item">
             <a class="social-icon-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
@@ -289,11 +295,11 @@
 
       <div class="footer-phone-htmlacademy-logo">
         <p class="footer-phone">
-          <a class="footer-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          <a class="footer-phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
         </p>
-        <p class="htmlacademy-link logo">
+        <p class="htmlacademy-logo logo">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="34" alt="html academy">
+            <img class="footer-htmlacademy-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="html academy">
           </a>
         </p>
       </div>
