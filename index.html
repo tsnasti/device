@@ -11,17 +11,15 @@
   <header class="page-header">
     <div class="header-container">
       <p class="page-header-logo logo">
-        <a class="page-header-logo-link" href="">
-          <img class="page-header-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «DEVICE»">
+        <a class="page-header-logo-link">
+          <img src="img/device-logo.svg" width="145" height="36" alt="Логотип «DEVICE»">
         </a>
       </p>
       <ul class="user-list clear-list flex-list">
         <li class="user-item">
           <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="user-serch-field">
-              <label class="visually-hidden" for="serch-field">Поиск</label>
-              <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
-            </p>
+            <label class="visually-hidden" for="serch-field">Поиск</label>
+            <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
             <button class="serch-button visually-hidden" type="submit">
               <span class="visually-hidden">Поиск</span>
             </button>
@@ -63,7 +61,7 @@
       <section class="slider">
         <h2 class="visually-hidden">Подборка товаров</h2>
         <ol class="slider-list clear-list">
-          <li class="slider-item">
+          <li class="slider-item" data-number="01">
             <img class="slider-image" src="img/quadcopter-slider.png" width="560" height="560" alt="Фото квадрокоптера">
             <div class="slider-item-container">
               <h2 class="title slider-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -81,7 +79,7 @@
               </dl>
             </div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item" data-number="02">
             <img class="slider-image" src="img/fitness-bracelet-slider.png" width="560" height="560" alt="Фото фитнес-браслета">
             <div class="slider-item-container">
               <h2 class="title slider-title">Худеем правильно!</h2>
@@ -95,7 +93,7 @@
               </dl>
             </div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item" data-number="03">
             <img class="slider-image" src="img/selfie-stick-slider.png" width="560" height="560" alt="Фото селфи-палки">
             <div class="slider-item-container">
               <h2 class="title slider-title">Делай селфи, как Бен Стиллер!</h2>
@@ -135,54 +133,59 @@
         </button>
       </section>
 
-      <section class="catalog-products">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="catalog-list clear-list flex-list">
-          <li class="catalog-item">
-            <a class="catalog-link vr-link" href="#">Виртуальная реальность</a>
+      <section class="catalog-categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+        <ul class="categories-list clear-list flex-list">
+          <li class="categories-item">
+            <a class="categories-link vr-link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link monopod-link" href="#">Моноподы для селфи</a>
+          <li class="categories-item">
+            <a class="categories-link monopod-link" href="#">Моноподы для селфи</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link action-camera-link" href="#">Экшн-камеры</a>
+          <li class="categories-item">
+            <a class="categories-link action-camera-link" href="#">Экшн-камеры</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link fitness-bracelets-link" href="#">Фитнес-браслеты</a>
+          <li class="categories-item">
+            <a class="categories-link fitness-bracelets-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link smart-watch-link" href="#">Умные часы</a>
+          <li class="categories-item">
+            <a class="categories-link smart-watch-link" href="#">Умные часы</a>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-link quadcopter-link" href="#">Квадрокоптеры</a>
+          <li class="categories-item">
+            <a class="categories-link quadcopter-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
     </div>
 
     <section class="services">
-      <div class="page-container">
-        <div class="services-container flex-list">
-          <h2 class="visually-hidden">Предлагаемые сервисы</h2>
-          <!-- Пока разметила таблицей, так как в задании нет выпадающих блоков  -->
-          <ol class="services-list clear-list">
-            <li class="services-item">
-              <h2 class="title services-title">Доставка</h2>
-              <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-          </ol>
-          <ol class="slider-service-list clear-list">
-            <li class="slider-servise-item">
-              <button class="button service-button-current" type="button">Доставка</button>
-            </li>
-            <li class="slider-servise-item">
-              <button class="button service-button" type="button">Гарантия</button>
-            </li>
-            <li class="slider-servise-item">
-              <button class="button service-button" type="button">Кредит</button>
-            </li>
-          </ol>
-        </div>
+      <div class="page-container services-container flex-list">
+        <h2 class="visually-hidden">Предлагаемые сервисы</h2>
+        <ol class="services-list clear-list">
+          <li class="services-item services-item-delivery services-item-current">
+            <h2 class="title services-title">Доставка</h2>
+            <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="services-item services-item-warranty">
+            <h2 class="title services-title">Гарантия</h2>
+            <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </li>
+          <li class="services-item services-item-credit">
+            <h2 class="title services-title">Кредит</h2>
+            <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          </li>
+        </ol>
+        <ol class="slider-service-list clear-list">
+          <li class="slider-servise-item">
+            <button class="button service-button service-button-current" type="button">Доставка</button>
+          </li>
+          <li class="slider-servise-item">
+            <button class="button service-button" type="button">Гарантия</button>
+          </li>
+          <li class="slider-servise-item">
+            <button class="button service-button" type="button">Кредит</button>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -199,22 +202,22 @@
 
       <div class="index-columns">
         <section class="information-section">
-          <h2 class="title iformation-title">О нас</h2>
-          <p class="iformation-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="iformation-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <h2 class="title">О нас</h2>
+          <p class="information-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="information-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="transport-company-list">
             <li class="transport-company-item">Меловые линии</li>
             <li class="transport-company-item">СДИК</li>
             <li class="transport-company-item">ТоксБерри</li>
           </ul>
-          <p class="more information">
+          <p class="more-information">
             <a class="button button-more-us" href="#">Подробнее о нас</a>
           </p>
         </section>
 
         <section class="contacts">
-          <h2 class="title contact-title">Контакты</h2>
-          <p class="contact-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
+          <h2 class="title">Контакты</h2>
+          <p class="information-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки.</p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -233,32 +236,30 @@
     </div>
 
     <section class="distribution">
-      <div class="page-container">
-        <div class="distribution-container flex-list">
-          <h2 class="title distribution-title">Подпишитесь на рассылку</h2>
-          <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="distribution-email">
-              <label class="visually-hidden" for="distribution-email">Email</label>
-              <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
-            </p>
-            <button class="distribution-button" type="submit">Подписаться</button>
-          </form>
-          <p class="distribution-clarification">Это бесплатно</p>
-        </div>
+      <div class="page-container distribution-container flex-list">
+        <h2 class="title distribution-title">Подпишитесь на рассылку</h2>
+        <p class="distribution-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="distribution-email">
+            <label class="visually-hidden" for="distribution-email">Email</label>
+            <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
+          </p>
+          <button class="distribution-button" type="submit">Подписаться</button>
+        </form>
+        <p class="distribution-clarification">Это бесплатно</p>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer-container flex-list">
-      <div class="footer-adress-logo">
+      <div class="footer-address-logo">
         <p class="footer-logo logo">
-          <a class="footer-logo-link" href="#">
-            <img class="footer-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «Девайс»">
+          <a class="footer-logo-link">
+            <img src="img/device-logo.svg" width="145" height="36" alt="Логотип «Девайс»">
           </a>
         </p>
-        <p class="adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
 
       <div class="navigation-social">
@@ -304,7 +305,6 @@
         </p>
       </div>
     </div>
-
   </footer>
 </body>
 

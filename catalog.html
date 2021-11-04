@@ -12,16 +12,14 @@
     <div class="header-container header-container-inner">
       <p class="page-header-logo logo">
         <a class="page-header-logo-link" href="index.html">
-          <img class="page-header-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «DEVICE»">
+          <img src="img/device-logo.svg" width="145" height="36" alt="Логотип «DEVICE»">
         </a>
       </p>
       <ul class="user-list clear-list flex-list">
         <li class="user-item">
           <form class="user-serch-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="user-serch-field">
-              <label class="visually-hidden" for="serch-field">Поиск</label>
-              <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
-            </p>
+            <label class="visually-hidden" for="serch-field">Поиск</label>
+            <input class="field-serch" placeholder="Поиск по сайту" type="text" name="serch-field" id="serch-field" required>
             <button class="serch-button visually-hidden" type="submit">
               <span class="visually-hidden">Поиск</span>
             </button>
@@ -60,7 +58,7 @@
 
 
   <main class="main-inner">
-    <div class="page-container-inner">
+    <div class="page-container page-container-inner">
       <header class="inner-header">
         <h1 class="title inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list clear-list flex-list">
@@ -75,8 +73,10 @@
           </li>
         </ul>
       </header>
+    </div>
 
-      <section class="catalog-products">
+    <section class="catalog-products">
+      <div class="page-container page-container-inner catalog-container">
         <div class="catalog-filter-container">
           <h2 class="catalog-products-title">Фильтр:</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -140,8 +140,7 @@
               <ul class="catalog-filter-list clear-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="availability" value="available"
-                      checked>
+                    <input class="visually-hidden control-input" type="radio" name="availability" value="available" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
@@ -156,7 +155,7 @@
               </ul>
             </fieldset>
 
-            <button class="button" type="submit">Показать</button>
+            <button class="button filter-button-show" type="submit">Показать</button>
           </form>
         </div>
 
@@ -255,19 +254,19 @@
             </li>
           </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer-container flex-list">
-      <div class="footer-adress-logo">
+      <div class="footer-address-logo">
         <p class="footer-logo logo">
-          <a class="footer-logo-link" href="#">
-            <img class="footer-logo" src="img/device-logo.svg" width="144,9" height="36" alt="Логотип «Девайс»">
+          <a class="footer-logo-link" href="index.html">
+            <img src="img/device-logo.svg" width="145" height="36" alt="Логотип «Девайс»">
           </a>
         </p>
-        <p class="adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </div>
 
       <div class="navigation-social">
@@ -313,7 +312,6 @@
         </p>
       </div>
     </div>
-
   </footer>
 </body>
 
