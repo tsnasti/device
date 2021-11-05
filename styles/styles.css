@@ -540,9 +540,14 @@ body {
   margin: 0;
 }
 
+.distribution-form {
+  display: grid;
+  grid-template-columns: 560px 260px;
+  column-gap: 40px;
+  margin-top: 40px;
+}
+
 .field-distribution-email {
-  width: 560px;
-  margin-right: 40px;
   opacity: 0.5;
   background-color: #F0F0F0;
   border: hidden;
@@ -559,6 +564,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   display: block;
+}
+
+.distribution-clarification {
+  margin: 0;
+  align-self: flex-end;
 }
 
 .page-footer {
@@ -789,20 +799,45 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 44px 40px;
   padding-left: 72px;
   margin-bottom: 44px;
 }
 
+.product-card {
+  display: grid;
+  grid-template-columns: 280px 14px 66px;
+  grid-template-rows: 380px 34px min-content;
+}
+
+.product-card-image {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  margin: 0;
+}
+
 .product-card-link {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  align-self: flex-start;
   color: #000000;
   text-decoration: none;
 }
 
+.product-card-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 .product-card-price {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self: flex-end;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
