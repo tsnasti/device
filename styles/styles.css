@@ -541,9 +541,10 @@ body {
 }
 
 .distribution-form {
-  display: grid;
-  grid-template-columns: 560px 260px;
-  column-gap: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 860px;
   margin-top: 40px;
 }
 
@@ -556,7 +557,6 @@ body {
 .distribution-button {
   width: 260px;
   height: 55px;
-  margin-right: 171px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -809,19 +809,16 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 280px 14px 66px;
-  grid-template-rows: 380px 34px min-content;
+  grid-template-rows: 412px min-content;
 }
 
 .product-card-image {
   grid-column: 1/-1;
-  grid-row: 1/2;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .product-card-link {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  align-self: flex-start;
   color: #000000;
   text-decoration: none;
 }
@@ -836,8 +833,7 @@ body {
 
 .product-card-price {
   grid-column: 3/4;
-  grid-row: 3/4;
-  justify-self: flex-end;
+  text-align: right;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
