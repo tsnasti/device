@@ -549,9 +549,14 @@ body {
 }
 
 .field-distribution-email {
+  padding-right: 40px;
+  padding-bottom: 8px;
+  height: 30px;
   opacity: 0.5;
   background-color: #F0F0F0;
   border: hidden;
+  border-bottom: 3px solid rgba(0, 0, 1, 0.2);
+  flex-grow: 1;
 }
 
 .distribution-button {
@@ -563,6 +568,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  border: 3px solid rgba(0, 0, 1, 0.1);
   display: block;
 }
 
