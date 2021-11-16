@@ -47,6 +47,11 @@ body {
   color: #444444;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -413,7 +418,7 @@ body {
 
 .sub-catalog-list {
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: -40px;
   z-index: 3;
   width: 1070px;
@@ -472,11 +477,11 @@ body {
 
 .main-index {
   color: #444444;
-  margin-top: -150px;
+  margin-top: -144px;
 }
 
 .main-inner {
-  padding-top: 37px;
+  padding-top: 38px;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -488,7 +493,7 @@ body {
 }
 
 .slider  {
-  margin-bottom: 70px;
+  margin-bottom: 64px;
 }
 
 .slider-item {
@@ -506,15 +511,15 @@ body {
 }
 
 .slider-item-container {
-  margin-top: 108px;
-  margin-left: 40px;
+  margin-top: 80px;
+  margin-left: 39px;
   text-align: left;
 }
 
 .slider-item::after {
   position: absolute;
-  top: 87px;
-  right: 49px;
+  top: 82px;
+  right: 50px;
   z-index: 1;
   content: attr(data-number);
   font-size: 180px;
@@ -529,7 +534,7 @@ body {
 }
 
 .slider-title {
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 }
 
 .slider-information {
@@ -539,8 +544,8 @@ body {
 .button-slider {
   display: block;
   width: 220px;
-  margin-top: 35px;
-  margin-bottom: 65px;
+  margin-top: 36px;
+  margin-bottom: 53px;
 }
 
 .slider-description-container {
@@ -548,7 +553,7 @@ body {
 }
 
 .slider-description-term {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 36px;
   color: #000000;
 }
@@ -566,14 +571,14 @@ body {
 .slider-controls {
   position: absolute;
   top: 50%;
-  width: 560px;
+  width: 558px;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
 }
 
 .slider-button {
-  margin: 0 19px;
+  margin: 0 8px;
   width: 40px;
   height: 80px;
   color: #000000;
@@ -601,7 +606,7 @@ body {
 
 .slider-pagination-list {
   position: absolute;
-  top: 370px;
+  top: 364px;
   right: 50px;
 }
 
@@ -690,7 +695,7 @@ body {
 }
 
 .monopod-link::after {
-  background-image: url("../img/monopod.svg");
+  background: url("../img/monopod.svg") no-repeat bottom;
 }
 
 .action-camera-link::after {
@@ -734,8 +739,8 @@ body {
 }
 
 .services {
-  margin-top: 175px;
-  margin-bottom: 90px;
+  margin-top: 181px;
+  margin-bottom: 60px;
   text-align: left;
   background-color: #F0F0F0;
 }
@@ -763,7 +768,7 @@ body {
 
 .services-item-delivery::after {
   top: 20px;
-  right: 20px;
+  right: 0;
   width: 136px;
   height: 164px;
   background-image: url("../img/delivery.svg");
@@ -803,8 +808,8 @@ body {
   order: -1;
   width: 277px;
   margin-right: 116px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 78px;
+  padding-bottom: 69px;
   border-right: 7px solid #000000;
 }
 
@@ -838,7 +843,7 @@ body {
 }
 
 .slider-servise-item {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .slider-servise-item:nth-child(3) {
@@ -908,6 +913,7 @@ body {
 
 .appointment-title {
   margin: 0;
+  margin-right: 49px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -951,7 +957,7 @@ body {
 .index-columns {
   position: relative;
   display: flex;
-  margin-bottom: 87px;
+  margin-bottom: 53px;
   text-align: left;
 }
 
@@ -969,8 +975,8 @@ body {
 }
 
 .title-index-colums {
-  margin-top: 49px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 46px;
 }
 
 .information-description:nth-of-type(2) {
@@ -978,8 +984,8 @@ body {
 }
 
 .transport-company-list {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 76px;
+  margin-bottom: 58px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
@@ -987,14 +993,14 @@ body {
 
 .transport-company-item {
   position: relative;
-  margin-left: 26px;
+  margin-left: 35px;
   margin-bottom: 20px;
 }
 
 .transport-company-item::before {
   position: absolute;
-  top: 6px;
-  left: -26px;
+  top: 5px;
+  left: -35px;
   display: block;
   content: "";
   width: 8px;
@@ -1041,7 +1047,7 @@ body {
 }
 
 .contacts-schedule {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .distribution {
@@ -1060,7 +1066,7 @@ body {
 }
 
 .distribution-description {
-  margin: 0;
+  margin-top: 10px;
 }
 
 .distribution-form {
@@ -1077,6 +1083,9 @@ body {
   padding-top: 14px;
   padding-bottom: 8px;
   padding-right: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   background-color: #F0F0F0;
   border: hidden;
   border-bottom: 3px solid rgba(0, 0, 1, 0.2);
@@ -1138,6 +1147,7 @@ body {
   align-self: flex-end;
   padding-left: 35px;
   margin: 0;
+  margin-bottom: 12px;
   background-image: url("../img/icons/check-mark.svg");
   background-repeat: no-repeat;
   background-size: 14px 14px;
@@ -1163,7 +1173,7 @@ body {
 .footer-address-logo ::after {
   position: absolute;
   left: 0;
-  bottom: 35px;
+  bottom: 22px;
   content: "";
   width: 80px;
   border-bottom: 7px solid #FFC700;
@@ -1171,7 +1181,7 @@ body {
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 12px;
 }
 
 .footer-logo-link {
@@ -1196,11 +1206,12 @@ body {
 }
 
 .navigation-social {
-  margin-top: 85px;
+  margin-top: 71px;
+  margin-right: 18px;
 }
 
 .footer-navigation-list {
-  margin-bottom: 49px;
+  margin-bottom: 58px;
 }
 
 .footer-navigation-link {
@@ -1256,6 +1267,7 @@ body {
 
 .footer-social-list {
   justify-content: center;
+  margin-right: 27px;
 }
 
 .footer-social-item {
@@ -1307,7 +1319,7 @@ body {
 }
 
 .footer-phone-htmlacademy-logo {
-  margin-top: 85px;
+  margin-top: 71px;
 }
 
 .footer-phone,
@@ -1368,7 +1380,7 @@ body {
 }
 
 .header-container-inner {
-  padding-bottom: 53px;
+  padding-bottom: 47px;
 }
 
 .modal-container {
@@ -1647,7 +1659,7 @@ body {
 
 .inner-header-title {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 25px;
 }
 
 .breadcrumbs-list {
@@ -1741,7 +1753,7 @@ body {
 .catalog-filter-group {
   position: relative;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 66px;
   padding: 0;
   border: none;
 }
@@ -1751,12 +1763,12 @@ body {
 }
 
 .catalog-filter-group:last-of-type {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-group::before {
   position: absolute;
-  top: -30px;
+  top: -34px;
   content: "";
   width: 200px;
   border-bottom: 2px solid #000000;
@@ -1772,7 +1784,7 @@ body {
 
 .range {
   max-width: 200px;
-  margin-top: 45px;
+  margin-top: 27px;
   overflow: auto;
 }
 
@@ -1780,7 +1792,7 @@ body {
   position: relative;
   height: 2px;
   margin-top: 10px;
-  margin-left: 12px;
+  margin-left: 10px;
   margin-bottom: 15px;
   background-color: #DCDCDC;
 }
@@ -1820,12 +1832,14 @@ body {
 }
 
 .range-wrapper-inputs {
+  position: absolute;
+  left: -6px;
   display: flex;
 }
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 66px;
+  margin-right: 64px;
   font-size: 15px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -1869,7 +1883,7 @@ body {
 }
 
 .catalog-filter-item {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .control {
@@ -1892,7 +1906,7 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 16px;
   height: 16px;
@@ -2026,7 +2040,7 @@ body {
 }
 
 .select-control {
-  margin-left: 50px;
+  margin-left: 32px;
   padding: 3px 39px 7px 13px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -2085,14 +2099,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   gap: 44px 40px;
-  margin-bottom: 44px;
+  margin-bottom: 47px;
   padding-left: 72px;
 }
 
 .product-card {
   position: relative;
   display: grid;
-  grid-template-columns: 280px 14px 66px;
+  grid-template-columns: 280px 11px 66px;
   grid-template-rows: 412px min-content;
 }
 
@@ -2188,8 +2202,8 @@ body {
 .product-card-new {
   position: absolute;
   right: 27px;
-  top: 27px;
-  padding: 22px 9px;
+  top: 30px;
+  padding: 21px 9px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -2245,7 +2259,7 @@ body {
 }
 
 .pagination-item:first-child {
-  margin-right: auto;
+  margin-right: 172px;
 }
 
 .pagination-item:last-child {
