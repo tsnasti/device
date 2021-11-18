@@ -449,7 +449,7 @@ img {
   opacity: 0.3;
 }
 
-.sub-catalog-container-list {
+.sub-catalog-container {
   position: absolute;
   top: 42px;
   left: -40px;
@@ -457,18 +457,15 @@ img {
   width: 1070px;
   padding: 23px 45px 40px;
   background-color: #FFE17F;
-}
-
-.sub-catalog-container {
   display: none;
 }
 
 .navigation-catalog:focus-within .sub-catalog-container {
-  display: block;
+  display: flex;
 }
 
 .navigation-catalog:hover .sub-catalog-container {
-  display: block;
+  display: flex;
 }
 
 .main-container {
