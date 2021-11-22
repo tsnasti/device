@@ -51,23 +51,24 @@
             </svg>
             Корзина
           </a>
+          <!-- Чтобы поповер отображался необходимо добавить класс popover-open -->
           <div class="popover popover-cart">
             <div class="popover-content">
               <ul class="cart-items-list clear-list">
                 <li class="cart-item">
-                  <a class="cart-image-popover-link" href="#">
+                  <a class="cart-popover-link" href="#">
                     <img class="cart-image-popover" src="img/not-professional-selfie-stick.jpg" width="41" height="43" alt="">
+                    Любительская<br>селфи-палка
                   </a>
-                  <a class="cart-item-title" href="#">Любительская селфи-палка</a>
                   <button class="cart-item-button" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
                 </li>
                 <li class="cart-item">
-                  <a class="cart-image-popover-link" href="#">
-                    <img class="product-card-image" src="img/professional-selfie-stick.jpg" width="41" height="43" alt="">
+                  <a class="cart-popover-link" href="#">
+                    <img class="cart-image-popover" src="img/professional-selfie-stick.jpg" width="41" height="43" alt="">
+                    Профессиональная селфи-палка
                   </a>
-                  <a class="cart-item-title" href="#">Профессиональная селфи-палка</a>
                   <button class="cart-item-button" type="button">
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
@@ -332,6 +333,7 @@
         <p class="distribution-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
         <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="distribution-email">Email</label>
+          <!-- Чтобы в поле отображалось состояние при ошибке необходимо добавить класс error -->
           <input class="field-distribution-email" placeholder="Ваш e-mail" type="email" name="distribution-email" id="distribution-email" required>
           <button class="distribution-button" type="submit">Подписаться</button>
         </form>
@@ -410,9 +412,10 @@
       </div>
     </div>
   </footer>
+  <!-- Чтобы модальное окно отображалось необходимо убрать класс modal-container-close -->
   <div class="modal-container modal-container-close">
     <div class="modal modal-delivery-order">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -420,39 +423,47 @@
         <form class="delivry-order-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group name-group">
             <label class="form-label-delivery" for="customer-name">Ваше имя:</label>
-            <input class="modal-field modal-field-name" type="text" id="customer-name" name="customer-name" placeholder="Имя Фамилия">
+            <!-- Чтобы в поле отображалось состояние при ошибке необходимо добавить класс error -->
+            <input class="modal-field modal-field-name" type="text" id="customer-name" name="customer-name" placeholder="Имя Фамилия" required>
             <svg class="field-icon" width="13" height="12" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" />
             </svg>
+            <!-- Чтобы в подписи к полю отображалось состояние при ошибке необходимо добавить класс error -->
             <span class="signature-field signature-name">Пожалуйста, представьтесь</span>
           </div>
           <div class="field-group mail-group">
             <label class="form-label-delivery" for="customer-mail">Ваш e-mail:</label>
-            <input class="modal-field" type="text" id="customer-mail" name="customer-mail" placeholder="krasotka92@mail.ru">
+            <!-- Чтобы в поле отображалось состояние при ошибке необходимо добавить класс error -->
+            <input class="modal-field" type="text" id="customer-mail" name="customer-mail" placeholder="krasotka92@mail.ru" required>
             <svg class="field-icon" width="15" height="12" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z" />
             </svg>
+            <!-- Чтобы в подписи к полю отображалось состояние при ошибке необходимо добавить класс error -->
             <span class="signature-field signature-mail">Забавный у вас адрес</span>
           </div>
           <div class="field-group order-group">
             <label class="form-label-delivery" for="order-description">Что нужно привезти:</label>
-            <input class="modal-field" type="text" id="order-description" name="order-description" placeholder="В свободной форме">
+            <!-- Чтобы в поле отображалось состояние при ошибке необходимо добавить класс error -->
+            <input class="modal-field" type="text" id="order-description" name="order-description" placeholder="В свободной форме" required>
           </div>
           <div class="field-group count-group">
             <label class="form-label-delivery" for="order-count">Количество:</label>
-            <button class="modal-info-button" type="button">
-              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-            </button>
-            <div class="count-popover">
-              <p class="count-popover-content">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+            <div class="count-popover-conteiner">
+              <button class="modal-info-button" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+              <div class="count-popover">
+                <p class="count-popover-content">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+              </div>
             </div>
-            <button class="button-count button-minus">
+            <button class="button-count button-minus" type="button">
               <span class="visually-hidden">Уменьшить колличество</span>
             </button>
-            <button class="button-count button-plus">
+            <button class="button-count button-plus" type="button">
               <span class="visually-hidden">Увеличить колличество</span>
             </button>
-            <input class="modal-field modal-field-count" type="number" id="order-count" name="order-count" value="1">
+            <!-- Чтобы в поле отображалось состояние при ошибке необходимо добавить класс error -->
+            <input class="modal-field modal-field-count" type="number" id="order-count" name="order-count" value="1" required>
           </div>
           <button class="button modal-button-submit" type="submit">Отправить</button>
         </form>

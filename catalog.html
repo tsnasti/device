@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -51,6 +52,38 @@
             </svg>
             Корзина
           </a>
+          <!-- Чтобы поповер отображался необходимо добавить класс popover-open -->
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <ul class="cart-items-list clear-list">
+                <li class="cart-item">
+                  <a class="cart-popover-link" href="#">
+                    <img class="cart-image-popover" src="img/not-professional-selfie-stick.jpg" width="41" height="43" alt="">
+                    Любительская<br>селфи-палка
+                  </a>
+                  <button class="cart-item-button" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-popover-link" href="#">
+                    <img class="cart-image-popover" src="img/professional-selfie-stick.jpg" width="41" height="43" alt="">
+                    Профессиональная селфи-палка
+                  </a>
+                  <button class="cart-item-button" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="cart-number-sum">
+              <p class="cart-number">Товаров: 2</p>
+              <p class="cart-sum">Сумма: 2000 ₽</p>
+            </div>
+            <p class="cart-link">
+              <a class="cart-open-link" href="#">Открыть корзину</a>
+            </p>
+          </div>
         </li>
       </ul>
 
